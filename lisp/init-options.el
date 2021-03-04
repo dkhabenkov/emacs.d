@@ -15,4 +15,6 @@
 
 (setq make-backup-files nil)
 
+(show-paren-mode t)
+
 (provide 'init-options)
