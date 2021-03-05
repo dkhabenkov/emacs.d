@@ -18,4 +18,6 @@
 (setq-default indent-tabs-mode nil)
 (show-paren-mode t)
 
+(menu-bar-mode -1)
+
 (provide 'init-options)
