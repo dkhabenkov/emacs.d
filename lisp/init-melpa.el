@@ -13,10 +13,8 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-(add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
-(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+(package-initialize)
 
-;; (package-initialize)
-
-(require 'init-melpa)
-(require 'init-options)
+(provide 'init-melpa)

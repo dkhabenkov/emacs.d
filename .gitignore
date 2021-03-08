@@ -1,0 +1,5 @@
+# Ignore ELPA directory
+/elpa/
+
+# Ignore custom-file
+/custom.el
