@@ -18,5 +18,5 @@
 
 ;; (package-initialize)
 
-(require 'init-melpa)
 (require 'init-options)
+(require 'init-use-package)
