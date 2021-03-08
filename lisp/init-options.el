@@ -13,6 +13,13 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+(require 'init-pragmatapro)
+
+(add-to-list 'default-frame-alist '(font . "PragmataPro Mono Liga 12"))
+(add-hook 'text-mode-hook #'prettify-hook)
+(add-hook 'prog-mode-hook #'prettify-hook)
+(global-prettify-symbols-mode t)
+
 (setq make-backup-files nil)
 
 (setq-default indent-tabs-mode nil)
