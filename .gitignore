@@ -3,3 +3,9 @@
 
 # Ignore custom-file
 /custom.el
+
+# Ignore Projectile Bookmarks
+/projectile-bookmarks.eld
+
+# Ignore Projectile Cache
+/projectile.cache
