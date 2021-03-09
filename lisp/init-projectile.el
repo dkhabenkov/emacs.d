@@ -14,6 +14,9 @@
 ;; along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 (use-package projectile
-  :ensure t)
+  :ensure t
+  :config
+  (projectile-mode t)
+  (setq projectile-project-search-path '("~/Documents/Projects/")))
 
 (provide 'init-projectile)
