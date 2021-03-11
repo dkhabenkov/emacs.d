@@ -16,4 +16,9 @@
 (use-package helm
   :ensure t)
 
+(use-package helm-projectile
+  :ensure t
+  :config
+  (helm-projectile-on))
+
 (provide 'init-helm)
