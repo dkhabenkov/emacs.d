@@ -13,13 +13,7 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-(add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
-(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
+(use-package magit
+  :ensure t)
 
-;; (package-initialize)
-
-(require 'init-options)
-(require 'init-use-package)
-(require 'init-projectile)
-(require 'init-magit)
-(require 'init-helm)
+(provide 'init-magit)
