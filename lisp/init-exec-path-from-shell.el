@@ -13,14 +13,8 @@
 ;; You should have received a copy of the GNU General Public License
 ;; along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-(add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
-(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
+(use-package exec-path-from-shell
+  :if (memq window-system '(mac ns x))
+  :ensure t)
 
-;; (package-initialize)
-
-(require 'init-options)
-(require 'init-use-package)
-(require 'init-exec-path-from-shell)
-(require 'init-projectile)
-(require 'init-magit)
-(require 'init-helm)
+(provide 'init-exec-path-from-shell)
