@@ -14,6 +14,7 @@
 ;; along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 (use-package magit
-  :ensure t)
+  :ensure t
+  :bind ("C-c m" . magit-status))
 
 (provide 'init-magit)
