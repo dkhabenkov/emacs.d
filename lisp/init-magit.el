@@ -15,6 +15,8 @@
 
 (use-package magit
   :ensure t
+  :config
+  (setq transient-save-history nil)
   :bind ("C-c m" . magit-status))
 
 (provide 'init-magit)
